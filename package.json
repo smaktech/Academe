@@ -1,11 +1,13 @@
 {
   "name": "@minimal/minimal-kit-react",
-  "homepage": "http://acadame.cdssapps.in",
+  "homepage": "https://acadame.cdssapps.in/",
   "author": "minimals.cc",
   "version": "1.1.1",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx ./src",
